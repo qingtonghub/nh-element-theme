@@ -15,7 +15,7 @@ $--color-danger: #FF3B30 !default;
 ```shell
 npm i
 ```
-#### 2. 修改`src/common/var.scss`中的主题色
+#### 2. 直接修改`src/common/var.scss`中的主题色
 ```
 $--color-primary: #xxx !default;
 $--color-success: #xxx !default;
@@ -26,9 +26,17 @@ $--color-danger: #xxx !default;
 ```shell
 npm run build
 ```
-#### 4. 复制&按需引入
-将生成的lib文件下的css全部拷贝至你当前的项目下，改名为`theme`文件夹,
-搭配 `babel-plugin-component` 一起使用，只需要修改 `.babelrc` 的配置，指定 `styleLibraryName` 路径为自定义主题相对于 `.babelrc` 的路径，注意要加 `~`。
+#### 4. 使用
+##### 4.1 全局引入
+将生成的lib文件下的index.css拷贝至你当前的项目下，可改名为`nh-element-theme.css`文件,然后在main.js中引入即可
+```js
+import NhElement from 'nh-element-ui';
+import './assets/style/nh-element-theme.css'; // 或者你放置的其他文件夹位置
+
+Vue.use(NhElement);
+```
+##### 4.2 按需引入
+将生成的lib文件下的css全部拷贝至你当前的项目下，改名为`theme`文件夹,搭配 `babel-plugin-component` 一起使用，只需要修改 `.babelrc` 的配置，指定 `styleLibraryName` 路径为自定义主题相对于 `.babelrc` 的路径，注意要加 `~`。
 ```json
 {
   "plugins": [
