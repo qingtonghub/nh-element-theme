@@ -1,0 +1,17 @@
+@import "./../src/mixins/mixins";
+@import "./../src/common/var";
+
+@include b(radio-group) {
+  &.is-plain {
+    .el-radio-button__orig-radio {
+      &:checked {
+        & + .el-radio-button__inner {
+          color: $--radio-button-checked-background-color;
+          background-color: $--radio-button-checked-font-color;
+          border-color: $--radio-button-checked-background-color;
+        }
+      }
+    }
+  }
+}
+

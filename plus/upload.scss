@@ -1,0 +1,25 @@
+@import "./../src/common/var";
+
+.el-upload--picture-card {
+  &:hover {
+    i {
+      color: $--color-primary;
+    }
+  }
+}
+.el-upload-list--picture,
+.el-upload-list--picture-card {
+  .el-upload-list__item-status-label {
+    background: $--color-primary;
+  }
+}
+
+.el-upload-dragger {
+  &:hover {
+    transition: all .3s;
+    background-color: $--color-primary-light-9;
+    .el-icon-upload {
+      color: $--color-primary-light-4;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+
+.el-message-box {
+  padding-bottom: 15px;
+  .el-message-box__title {
+    position: relative;
+    top: 8px;
+    font-weight: bold;
+  }
+  &.el-message-box-status {
+    .el-message-box__title {
+      padding-left: 34px;
+    }
+    .el-message-box__status {
+      top: -34px;
+      transform: initial;
+    }
+  }
+}

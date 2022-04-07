@@ -1,0 +1,6 @@
+@import "./../src/common/var";
+
+.el-calendar-table td.is-selected,
+.el-calendar-table .el-calendar-day:hover {
+  background-color: #E8F0FF;
+}

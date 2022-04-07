@@ -1,0 +1,15 @@
+@import "./../src/common/var";
+
+.el-select {
+  .el-tag {
+    &:hover {
+      cursor: pointer;
+      background-color: $--color-primary-light-9;
+      color: $--color-primary;
+      .el-tag__close {
+        background-color: $--color-primary-light-6;
+        color: $--color-primary;
+      }
+    }
+  }
+}

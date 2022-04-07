@@ -1,0 +1,16 @@
+@import "./../src/common/var";
+
+
+.el-pagination {
+  font-weight: normal;
+  &.is-background {
+    .btn-prev,
+    .btn-next,
+    .el-pager li {
+      background-color: #fff;
+      border: 1px solid $--border-color-base;
+      border-radius: 4px;
+      color: #606266;
+    }
+  }
+}

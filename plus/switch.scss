@@ -1,0 +1,27 @@
+
+.el-switch {
+  &.el-switch__text__inner {
+    .el-switch__label {
+      position: absolute;
+      color: #fff !important;
+      z-index: 1;
+      display: none;
+    }
+    .is-active {
+      display: inline-block;
+    }
+    .el-switch__label--left {
+      span, i  {
+        margin-left: 20px;
+      }
+    }
+    .el-switch__label--right {
+      span {
+        margin-left: -4px;
+      }
+      i {
+        margin-left: -45px;
+      }
+    }
+  }
+}
